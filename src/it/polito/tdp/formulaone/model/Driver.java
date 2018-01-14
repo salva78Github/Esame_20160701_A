@@ -13,6 +13,8 @@ public class Driver {
 	private LocalDate dob ; // date of birth
 	private String nationality ;
 	private String url ;
+	private int score;
+	
 	public Driver(int driverId, String driverRef, int number, String code, String forename, String surname,
 			LocalDate dob, String nationality, String url) {
 		super();
@@ -79,6 +81,27 @@ public class Driver {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	/**
+	 * @param driversBeaten the driversBeaten to set
+	 */
+	public void setScore(int driversBeaten) {
+		this.score = driversBeaten;
+	}
+	/**
+	 * @return the driversBeaten
+	 */
+	public int getScore() {
+		return score;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Driver [driverId=" + driverId + ", driverRef=" + driverRef + ", number=" + number + ", code=" + code
+				+ ", forename=" + forename + ", surname=" + surname + ", dob=" + dob + ", nationality=" + nationality
+				+ ", url=" + url + ", score=" + score + "]";
 	}
 	
 	
